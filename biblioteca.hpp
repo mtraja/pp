@@ -3,9 +3,9 @@
 
 #include "livro.hpp"
 
-class Bibioteca {
+class Biblioteca {
     private:
-        static Bibioteca *instancia;
+        static Biblioteca *instancia;
         static int numeroInstanias;
 
         Livro* livros[10];
@@ -14,7 +14,7 @@ class Bibioteca {
         Biblioteca();
 
     public:
-        static Bibioteca *obterInstancia();
+        static Biblioteca *obterInstancia();
 
         void mostrarNumeroInstancia();
 
