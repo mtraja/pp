@@ -18,6 +18,6 @@ int main(int argc, char* argv[]) {
 
    b2->mostrarNumeroInstancia();
 
-   cout "Numero de Livros: " << b2->obterNumeroLivros() << endl;
+   cout << "Numero de Livros criados: " << b2->obterNumeroLivros() << endl;
 
 }
