@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 
-
 #include "biblioteca.hpp"
 
 using namespace std;
@@ -18,6 +17,6 @@ int main(int argc, char* argv[]) {
 
    b2->mostrarNumeroInstancia();
 
-   cout << "Numero de Livros criados: " << b2->obterNumeroLivros() << endl;
+   cout << "Numero de livros criados: " << b2->obterNumeroLivros() << endl;
 
 }
