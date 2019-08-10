@@ -3,7 +3,7 @@
 #include "livro.hpp"
 
 Biblioteca* Biblioteca::instancia = 0;
-int Biblioteca::numeroInstancia = 0;
+int Biblioteca::numeroInstancias = 0;
 
 Biblioteca* Biblioteca::getInstance()
 {
