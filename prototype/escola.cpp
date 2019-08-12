@@ -12,11 +12,11 @@ public:
     Pessoa(const string& sNome, int id):m_sNome(sNome),m_ID(id) { }
 
     Pessoa(const Pessoa& pessoa) { 
-        this->m_sName = pessoa.m_sNome;
+        this->m_sNome = pessoa.m_sNome;
         this->m_ID = person.m_ID;
     }
 
-    void SetName(const string& sNome) {
+    void SetNome(const string& sNome) {
          m_sNome = sNome; 
     }
 
@@ -90,7 +90,7 @@ private:
  
 void main(int argc, char* argv[]) 
 {
-    Escola escola1 = new Escola("Instuto Federal de Educacao");
+    Escola* escola1 = new Escola("Instuto Federal de Educacao");
     Pessoa* p1 = new Estudante("Marcos Aurelio",1);
     Pessoa* p2 = new Estudante("Geoge dos Santos",2);
     Pessoa* p3 = new Professor("Jonas Cabral",3);
