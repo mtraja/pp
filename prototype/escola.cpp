@@ -31,15 +31,25 @@ private:
  
 class Estudante: public Pessoa
 {
+private:
+   double m_Media; 
 public:
     Estudante(const string& sNome, int id):Pessoa(sNome, id)
     {
- 
+        this->m_Media = 0.0;
     }
     
     Estudante(const Estudante& estudante):Pessoa(estudante)
     {
- 
+        this->m_Media = estudante.m_Media;
+    }
+
+    void definirMedia(double media) {
+        this->m_Media = media;
+    }
+
+    double obterMedia() {
+        return m_Media;
     }
  
     Pessoa* clone()
@@ -50,15 +60,25 @@ public:
 
 class Professor: public Pessoa
 {
+private:
+    double m_Salario;
 public:
     Professor(const string& sName, int id):Pessoa(sName, id)
     {
- 
+        this->m_Salario = 2500.0;
     }
  
     Professor(const Professor& professor):Pessoa(professor)
     {
- 
+        this->m_Salario = professor.m_Salario;
+    }
+
+    void definirSalario(double salario) {
+        this->m_Salario = salario;
+    }
+
+    double obterSalario() {
+        return m_Salario;
     }
  
     Pessoa* clone()
