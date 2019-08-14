@@ -11,9 +11,9 @@ public:
 
     Pessoa(const string& sNome, int id):m_sNome(sNome),m_ID(id) { }
 
-    Pessoa(const Pessoa& pessoa) { 
-        this->m_sNome = pessoa.m_sNome;
-        this->m_ID = person.m_ID;
+    Pessoa(const Pessoa& pes) { 
+        this->m_sNome = pes.m_sNome;
+        this->m_ID = pes.m_ID;
     }
 
     void definirNome(const string& sNome) {
@@ -36,6 +36,7 @@ public:
     {
  
     }
+    
     Estudante(const Estudante& estudante):Pessoa(estudante)
     {
  
