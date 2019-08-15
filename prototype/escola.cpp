@@ -117,9 +117,11 @@ void main(int argc, char* argv[])
     Pessoa* p1 = new Estudante("Marcos Aurelio",1);
     Pessoa* p2 = new Estudante("Geoge dos Santos",2);
     Pessoa* p3 = new Professor("Jonas Cabral",3);
+    Pessoa* p4 = new Professor("Edson Passos",4);
     escola1->adicionarMembro(p1);
     escola1->adicionarMembro(p2);
     escola1->adicionarMembro(p3);
+    escola1->adicionarMembro(p4);
 
    // chama o construtor c��pia da classe Escola, que chama o m��todo clone() da Classe Pessoa.
     Escola* escola2 = new Escola(*escola1);
