@@ -11,6 +11,8 @@ public:
 
     Pessoa(const string& sNome, int id):m_sNome(sNome),m_ID(id) { }
 
+    virtual ~Pessoa() {}
+
     Pessoa(const Pessoa& pes) { 
         this->m_sNome = pes.m_sNome;
         this->m_ID = pes.m_ID;
@@ -119,7 +121,7 @@ void main(int argc, char* argv[])
     escola1->adicionarMembro(p2);
     escola1->adicionarMembro(p3);
 
-   // chama o construtor cópia da classe Escola, que chama o método clone() da Classe Pessoa.
+   // chama o construtor c��pia da classe Escola, que chama o m��todo clone() da Classe Pessoa.
     Escola* escola2 = new Escola(*escola1);
  
 }
