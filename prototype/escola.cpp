@@ -123,7 +123,7 @@ void main(int argc, char* argv[])
     escola1->adicionarMembro(p3);
     escola1->adicionarMembro(p4);
 
-   // chama o construtor c��pia da classe Escola, que chama o m��todo clone() da Classe Pessoa.
+   // chama o construtor cópia da classe Escola, que chama o método clone() da Classe Pessoa.
     Escola* escola2 = new Escola(*escola1);
  
 }
