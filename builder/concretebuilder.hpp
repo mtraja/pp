@@ -7,18 +7,29 @@
 
 #ifndef _CONCRETEBUILDER_HPP_
 #define _CONCRETEBUILDER_HPP_
+#include "builder.hpp"
 #include "product.hpp"
 
-class ConcreteBuilder : Builder {
+class ConcreteBuilder : public Builder {
 public:
-	virtual void buildPartA() {}
-	virtual void buildPartB() {}
+	virtual void buildPartA() {
+		cout << "---- building Parte A " << endl;
+		m_product->addPartA();
+	}
+	virtual void buildPartB() {
+		cout << "---- building Parte B" << endl;
+		m_product->addPartB();
+	}
 
-	virtual Product* getProduct() { return m_product; }
+	virtual Product* getProduct() {
+		cout << "obtendo produto" << endl;
+		return m_product;
+	}
 
 	virtual ~ConcreteBuilder() {}
 
 	ConcreteBuilder() {
+		cout << "criando ConcreteBuilder" << endl;
 		this->m_product = new Product();
 	}
 

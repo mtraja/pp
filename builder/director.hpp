@@ -16,6 +16,7 @@ class Director {
 
 	public:
 		Director(Builder* builder) {
+			cout << "criando Director " << endl;
 			this->m_builder = builder;
 		}
 
@@ -24,6 +25,7 @@ class Director {
 		~Director() {}
 
 		void construct() {
+			cout << "construindo produto " << endl;
 			m_builder->buildPartA();
 			m_builder->buildPartB();
 		}

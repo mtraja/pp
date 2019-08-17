@@ -10,7 +10,14 @@
 class Product {
 public:
 	Product() {
+		cout << "criando Product " << endl;
+	}
 
+	void addPartA() {
+		cout << "------- adding Parte A em Product " << endl;
+	}
+	void addPartB() {
+		cout << "------- adding Parte B em Product " << endl;
 	}
 
 };
