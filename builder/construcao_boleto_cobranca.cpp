@@ -29,7 +29,8 @@ void ConstrucaoBoletoCobranca::construirCodigoNumerico(){
 }
 
 void ConstrucaoBoletoCobranca::construirCodigoBarra() {
-s	tring* codigo =  new string("1111110000011111100000111111");
+	
+	string* codigo =  new string("1111110000011111100000111111");
 	m_boleto->adicionarCodigoBarra(codigo);	
 }
 
