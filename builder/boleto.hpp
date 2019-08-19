@@ -1,5 +1,4 @@
-https://github.com/mtraja/pp.githttps://github.com/mtraja/pp.githttps://github.com/mtraja/pp.githttps://github.com/mtraja/pp.git/*
- * boleto.hpp
+ /* boleto.hpp
  *
  *  Created on: Aug 16, 2019
  *      Author: trajano
@@ -10,36 +9,28 @@ https://github.com/mtraja/pp.githttps://github.com/mtraja/pp.githttps://github.c
 
 #include <string>
 
+using namespace std;
+
 class Boleto {
 
 private:
-	string* m_beneficiario;
-	string* m_cedente;
-	string* m_codigoNumerico;
-	string* m_codigoBarra;
-
+	string m_beneficiario;
+	string m_cedente;
+	string m_codigoNumerico;
+	string m_codigoBarra;
 
 public:
-	Boleto() {
-		cout << " Boleto criado " << endl;
-	}
+	Boleto();
 
-	void adicionarBeneficiario(string* benefi) {
-		m_beneficiario = benefi;
-	}
+	void adicionarBeneficiario(const string& benefi);
 
-	void adicionarCedente(string* cedente) {
-		m_cedente = cedente;
-	}	
+	void adicionarCedente(const string& cedente);
 	
-	void adicionarCodigoNumerico(string* codigo) {
-		m_codigoNumerico = codigo;
-	}
+	void adicionarCodigoNumerico(const string& codigo);
 
-	void adicionarCodigoBarra(string* codigo) {
-		m_codigoBarra = codigo;
-	}
+	void adicionarCodigoBarra(const string& codigo);
 
+	void imprimir();
 };
 
 #endif /* _BOLETO_HPP_ */

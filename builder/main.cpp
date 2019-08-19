@@ -5,21 +5,29 @@
  *      Author: trajano
  */
 
-using namespace std;
+
 
 #include <iostream>
 #include <string>
-#include "director.hpp"
-#include "concretebuilder.hpp"
-#include "product.hpp"
+#include "boleto.hpp"
+#include "emissor_boleto.hpp"
+#include "construcao_boleto_cobranca.hpp"
 
 
+using namespace std;
 
 int main() {
-	ConcreteBuilder* builder = new ConcreteBuilder();
-	Director* director = new Director(builder);
-	director->construct();
-	Product* prod = builder->getProduct();
+
+	ConstrucaoBoletoCobranca* builder = new ConstrucaoBoletoCobranca();
+
+	EmissorBoleto* director = new EmissorBoleto(builder);
+
+	director->construir();
+
+	Boleto* boleto = builder->obterBoleto();
+
+	boleto->imprimir();
+	
 	return 0;
 }
 
