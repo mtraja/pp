@@ -1,20 +1,24 @@
 #include "emissor_boleto.hpp"
 
-EmissorBoleto::EmissorBoleto(ConstrucaoBoleto* construdor) {
-	this->m_construdor = construdor;
+EmissorBoleto::EmissorBoleto(ConstrucaoBoleto* construtor) {
+	m_construtor = construtor;
 }
 
 EmissorBoleto::~EmissorBoleto() {
 
 }
 
-void EmissorBoleto::construir() {
+void EmissorBoleto::construirBoleto() {
  	
-	m_construdor->construirBeneficiario();
+	m_construtor->construirBeneficiario();
 
-	m_construdor->construirCedente();
+	m_construtor->construirCedente();
 	
-    m_construdor->construirCodigoBarra();
+    m_construtor->construirCodigoBarra();
 	
-    m_construdor->construirCodigoNumerico();   
+    m_construtor->construirCodigoNumerico();   
+}
+
+void EmissorBoleto::imprimirBoleto() {
+	m_construtor->imprimirBoleto();
 }

@@ -8,7 +8,10 @@
 #ifndef _CONSTRUCAO_BOLETO_HPP_
 #define _CONSTRUCAO_BOLETO_HPP_
 
+#include <iostream>
 #include "boleto.hpp"
+
+using namespace std;
 
 class ConstrucaoBoleto {
 public:
@@ -19,6 +22,8 @@ public:
 	virtual void construirCodigoNumerico();
 
 	virtual void construirCodigoBarra();
+
+	virtual void imprimirBoleto();
 
 	virtual Boleto* obterBoleto() = 0;
 

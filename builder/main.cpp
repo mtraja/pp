@@ -18,16 +18,16 @@ using namespace std;
 
 int main() {
 
-	ConstrucaoBoletoCobranca* builder = new ConstrucaoBoletoCobranca();
+	ConstrucaoBoletoCobranca* construtor = new ConstrucaoBoletoCobranca();
 
-	EmissorBoleto* director = new EmissorBoleto(builder);
+	EmissorBoleto* emissor = new EmissorBoleto(construtor);
 
-	director->construir();
+	emissor->construirBoleto();
 
-	Boleto* boleto = builder->obterBoleto();
+	construtor->imprimirBoleto();
 
-	boleto->imprimir();
 	
+
 	return 0;
 }
 

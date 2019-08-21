@@ -24,9 +24,18 @@ void Boleto::adicionarCodigoBarra(const string& codigo) {
 		m_codigoBarra = codigo;
 }
 
-void Boleto::imprimir() {
-	cout << "Beneficiario: " << m_beneficiario << endl;
-	cout << "Cedente: " << m_cedente << endl; 
-	cout << "Codigo Numerico: " << m_codigoNumerico << endl; 
-	cout << "Codigo Barra: " << m_codigoBarra << endl;
-}
+	string Boleto::obterBeneficiario() {
+		return m_beneficiario;
+	}
+
+	string Boleto::obterCedente() {
+		return m_cedente;
+	}
+
+	string Boleto::obterCodigoNumerico() {
+		return m_codigoNumerico;
+	}
+
+	string Boleto::obterCodigoBarra() {
+		return m_codigoBarra;
+	}

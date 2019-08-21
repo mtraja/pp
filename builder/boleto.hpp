@@ -30,7 +30,14 @@ public:
 
 	void adicionarCodigoBarra(const string& codigo);
 
-	void imprimir();
+	string obterBeneficiario();
+
+	string obterCedente();
+
+	string obterCodigoNumerico();
+
+	string obterCodigoBarra();
+
 };
 
 #endif /* _BOLETO_HPP_ */

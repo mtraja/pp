@@ -12,14 +12,15 @@
 
 class EmissorBoleto {
 	private:
-		ConstrucaoBoleto* m_construdor;
+		ConstrucaoBoleto* m_construtor;
 
 	public:
-		EmissorBoleto(ConstrucaoBoleto* construdor);
+		EmissorBoleto(ConstrucaoBoleto* construtor);
 
 		~EmissorBoleto();
 
-		void construir() ;
+		void construirBoleto();
+		void imprimirBoleto();
 };
 
 
