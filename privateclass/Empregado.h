@@ -17,9 +17,11 @@ private:
 	string admissao;
 	double diaria;
 	double diasTrabalho;
+
 public:
-	DataEmp();
-	virtual ~DataEmp();
+	DataEmp() {}
+	
+	virtual ~DataEmp(){}
 
 	const string& getAdmissao() const {
 		return admissao;
@@ -72,6 +74,7 @@ public:
 	virtual ~Empregado();
 	double calcularSalario();
 	void contratacao(const string&);
+	void imprimir() const;
 
 };
 

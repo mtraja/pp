@@ -1,11 +1,6 @@
 {
+    "C_Cpp.errorSquiggles": "Enabled",
     "files.associations": {
-        "string": "cpp",
-        "iostream": "cpp",
-        "deque": "cpp",
-        "vector": "cpp",
-        "random": "cpp",
-        "iosfwd": "cpp",
         "array": "cpp",
         "atomic": "cpp",
         "hash_map": "cpp",
@@ -27,11 +22,13 @@
         "ctime": "cpp",
         "cwchar": "cpp",
         "cwctype": "cpp",
+        "deque": "cpp",
         "list": "cpp",
         "map": "cpp",
         "set": "cpp",
         "unordered_map": "cpp",
         "unordered_set": "cpp",
+        "vector": "cpp",
         "exception": "cpp",
         "algorithm": "cpp",
         "functional": "cpp",
@@ -40,7 +37,9 @@
         "memory_resource": "cpp",
         "numeric": "cpp",
         "optional": "cpp",
+        "random": "cpp",
         "ratio": "cpp",
+        "string": "cpp",
         "string_view": "cpp",
         "system_error": "cpp",
         "tuple": "cpp",
@@ -50,6 +49,8 @@
         "future": "cpp",
         "initializer_list": "cpp",
         "iomanip": "cpp",
+        "iosfwd": "cpp",
+        "iostream": "cpp",
         "istream": "cpp",
         "limits": "cpp",
         "mutex": "cpp",
@@ -63,6 +64,5 @@
         "typeinfo": "cpp",
         "valarray": "cpp",
         "variant": "cpp"
-    },
-    "C_Cpp.errorSquiggles": "Disabled"
+    }
 }

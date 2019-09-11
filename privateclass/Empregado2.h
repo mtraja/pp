@@ -20,6 +20,7 @@ private:
 public:
 	Empregado();
 	virtual ~Empregado();
+	
 	double calcularSalario();
 
 	const string& getAdmissao() const {

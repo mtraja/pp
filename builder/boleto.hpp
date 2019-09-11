@@ -21,6 +21,7 @@ private:
 
 public:
 	Boleto();
+	~Boleto();
 
 	void adicionarBeneficiario(const string& benefi);
 

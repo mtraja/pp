@@ -8,6 +8,10 @@ Boleto::Boleto() {
 		cout << " Boleto criado " << endl;
 }
 
+Boleto::~Boleto(){
+	
+}
+
 void Boleto::adicionarBeneficiario(const string& benefi) {
 		this->m_beneficiario = benefi;
 }

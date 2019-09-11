@@ -8,7 +8,7 @@ ConstrucaoBoletoCobranca::ConstrucaoBoletoCobranca() : ConstrucaoBoleto() {
 }
 
 ConstrucaoBoletoCobranca::~ConstrucaoBoletoCobranca() {
-	
+	this->ConstrucaoBoleto::~ConstrucaoBoleto();
 }
 
 
