@@ -13,7 +13,7 @@ int main()
     cout << "Valor: " << nota1->calcular() << endl;
     cout << "--------------------------------------------"<<endl;
 
-    NotaProva* nota2 = new NotaProva("Prova Matematica", 17);
+    NotaProva* nota2 = new NotaProva("Prova Matematica", 18);
     cout << "Nota 2: " << nota2->obterDescricao() << endl;
     cout << "Valor: " << nota2->calcular() << endl;
     cout << "--------------------------------------------"<<endl;
