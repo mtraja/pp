@@ -8,8 +8,7 @@ NotaFinal::NotaFinal(string descricao)
 
 NotaFinal::~NotaFinal()
 {
-    m_notas->clear();
-    delete m_notas;
+    limpar();
 }
 
 double NotaFinal::calcular() const
@@ -22,3 +21,16 @@ double NotaFinal::calcular() const
     valor /= qtdNotas;
     return valor;
 }
+
+void NotaFinal::limpar() {
+   while (!m_notas->empty())
+    {
+        Nota* nota = m_notas->front();
+        delete nota;
+        m_notas->pop_front();
+    }
+    delete m_notas;
+    cout << "Limpando ..."<<endl;
+    cout << m_notas->size()<<endl;
+}
+

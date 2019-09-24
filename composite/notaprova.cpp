@@ -21,3 +21,4 @@ double NotaProva::valorEscore() const
 {
     return 10/m_numeroQuestao;
 }
+

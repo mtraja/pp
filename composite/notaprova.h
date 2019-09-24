@@ -8,9 +8,9 @@ class NotaProva : public Nota
 public:
     NotaProva(string descricao, int acertos);
     ~NotaProva() override;
-    //void add(Nota* n);
-    //void remove(Nota* n);
-    //Nota* getNota(int indice);
+    void add(Nota* n) = delete;
+    void remove(Nota* n) = delete;
+    Nota* getNota(int indice) = delete;
     double calcular() const override;
 
     double valorEscore() const;

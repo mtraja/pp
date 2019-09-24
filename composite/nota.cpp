@@ -18,6 +18,8 @@ void Nota::add(Nota *nota)
 
 void Nota::remove(Nota *nota)
 {
+    //container.emplace_back(std::make_unique<Type>());
+    
     if (m_notas != nullptr)
         m_notas->remove(nota);
 }
