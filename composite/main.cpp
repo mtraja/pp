@@ -32,8 +32,5 @@ int main()
     cout << "Nota Final: " << notaf->obterDescricao() << endl;
     cout << "Valor: " << notaf->calcular() << endl;
     cout << "--------------------------------------------"<<endl;
-    
-    notaf->limpar();
-
     return 0;
 }

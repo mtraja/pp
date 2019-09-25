@@ -30,7 +30,5 @@ void NotaFinal::limpar() {
         m_notas->pop_front();
     }
     delete m_notas;
-    cout << "Limpando ..."<<endl;
-    cout << m_notas->size()<<endl;
 }
 
